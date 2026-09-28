@@ -1,0 +1,75 @@
+{
+  "type": "application",
+  "title": "Growing Log",
+  "version": "1.0.0",
+  "initialRoute": "/",
+  "routes": {
+    "/": "ui://pages/today",
+    "/compare": "ui://pages/compare"
+  },
+  "theme": {
+    "mode": "light",
+    "color": {
+      "primary": "#3f7a2e",
+      "onPrimary": "#ffffff",
+      "primaryContainer": "#e2f0da",
+      "onPrimaryContainer": "#16330d",
+      "surface": "#ffffff",
+      "onSurface": "#141a12",
+      "surfaceContainerHighest": "#f3f6f1",
+      "onSurfaceVariant": "#7f8a7a",
+      "outline": "#e3eade",
+      "outlineVariant": "#e3eade",
+      "error": "#b3261e",
+      "onError": "#ffffff",
+      "warning": "#a4620a",
+      "onWarning": "#ffffff",
+      "inverseSurface": "#141a12",
+      "inverseOnSurface": "#ffffff"
+    },
+    "spacing": {
+      "xxs": 2,
+      "xs": 4,
+      "sm": 8,
+      "md": 16,
+      "lg": 24,
+      "xl": 32,
+      "2xl": 48
+    },
+    "shape": {
+      "none": 0,
+      "extraSmall": 4,
+      "small": 8,
+      "medium": 12,
+      "large": 16,
+      "extraLarge": 28,
+      "full": 999
+    },
+    "fonts": {
+      "JetBrainsMono": {
+        "source": "asset",
+        "family": "JetBrainsMono"
+      }
+    }
+  },
+  "state": {
+    "initial": {
+      "crop": "",
+      "season": [],
+      "seasonCount": 0,
+      "spans": [],
+      "spanCount": 0,
+      "avgDays": 0,
+      "today": "",
+      "compare": "",
+      "logRule": "",
+      "notice": "",
+      "compareLine": ""
+    }
+  },
+  "onInit": {
+    "type": "tool",
+    "tool": "log.season",
+    "params": {}
+  }
+}
